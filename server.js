@@ -5,7 +5,8 @@ const BodyParser = require('body-parser')
 const app = express();
 app.use(BodyParser.urlencoded({extended: true}))
 app.set("view engine", "ejs")
-app.set("views", "views")
+app.set("views", "")
+
 
 
 const db = mysql.createConnection({
